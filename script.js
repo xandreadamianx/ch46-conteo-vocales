@@ -21,11 +21,11 @@ function leerValorDeNombre(){
  return inputNombre.value;
 }
 function imprimirResultado ( resultado ) {
-	console.log( resultado );
-
+	const paragraph = document.getElementById("vocales");
+	paragraph.innerHTML = resultado;
+}
 function manejoDelEventoDeInputNombre(){
 	const nombre = leerValorDeNombre().toLowerCase();
 	const numLetraA = encontrarNumeroDeLetra("a", nombre );
 	imprimirResultado("Num Letras A: " + numLetraA );
-
 }
