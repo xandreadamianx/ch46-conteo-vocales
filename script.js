@@ -20,10 +20,12 @@ function leerValorDeNombre(){
  const inputNombre = document.getElementById("nombre");
  return inputNombre.value;
 }
+function imprimirResultado ( resultado ) {
+	console.log( resultado );
 
 function manejoDelEventoDeInputNombre(){
 	const nombre = leerValorDeNombre().toLowerCase();
 	const numLetraA = encontrarNumeroDeLetra("a", nombre );
-	console.log("Num Letras A: " + numLetraA );
+	imprimirResultado("Num Letras A: " + numLetraA );
 
 }
